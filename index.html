@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Saturn</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile-friendly -->
+  <title>fluxx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Your Existing CSS (Unchanged) */
+    /* Your CSS */
     .barcode-space {
       text-align: right;
       font-size: 20px;
@@ -24,27 +24,27 @@
       text-shadow: 4px 4px #413F37;
       background-color: #969370;
       padding: 0px 10px 20px;
-      box-shadow: inset 3px 3px #969370, inset 0px -8px #68664E ,4px 4px #68664E , -3px -3px #fff ;    
+      box-shadow: inset 3px 3px #969370, inset 0px -8px #68664E ,4px 4px #68664E , -3px -3px #fff ;     
     }
-    .spoiler{
+    .spoiler {
       background-color: #ECE9D8;
       color: transparent;
       user-select: none;
     }
-    .spoiler:hover{
+    .spoiler:hover {
       background-color: inherit;
       color: inherit;
     }
     .centre {
       width: 1000px;
       margin: 50px auto;
-      box-shadow: -7px -7px #969370; 
+      box-shadow: -7px -7px #969370;
     }
-    .content { 
+    .content {
       background: #fff;
       padding: 0px 40px 40px 10px;
-      box-shadow: inset 3px 3px #969370, inset -4px -4px #C9C6B7 ,4px 4px #68664E , -3px -3px #fff , inset -3px -3px #fff,inset -2px -2px #68664E;    
-      border: 8px solid #ECE9D8; 
+      box-shadow: inset 3px 3px #969370, inset -4px -4px #C9C6B7 ,4px 4px #68664E , -3px -3px #fff , inset -3px -3px #fff,inset -2px -2px #68664E;     
+      border: 8px solid #ECE9D8;
     }
     .diamond-pattern {
       position: fixed;
@@ -54,8 +54,8 @@
       height: 100%;
       z-index: -2;
       background-image: linear-gradient(45deg, #ECE9D8 25%, transparent 25%, transparent 75%, #ECE9D8 75%, #ECE9D8),
-                      linear-gradient(45deg, #ECE9D8 25%, transparent 25%, transparent 75%, #ECE9D8 75%, #ECE9D8);
-      background-size: 40px 40px; /* Adjust the size for a better loop */
+                          linear-gradient(45deg, #ECE9D8 25%, transparent 25%, transparent 75%, #ECE9D8 75%, #ECE9D8);
+      background-size: 40px 40px;
       background-position: 0 0, 20px 20px;
       animation: marquee 2s linear infinite;
     }
@@ -69,10 +69,11 @@
     }
     BODY {
       width: 100%;
-      background: #fff;
+      background: #ff;
       margin: 0;
       line-height: 1.0em;
       font-family: monospace;
+      overflow: hidden; /* Prevent scrolling initially */
     }
     HEADER {
       padding: 25px 0px 0px 0px;
@@ -92,8 +93,6 @@
       line-height: 1.2em;
       margin-left: 2.5em;
     }
-
-    /* New CSS for Blur Overlay */
     #blur-overlay {
       position: fixed;
       top: 0;
@@ -117,66 +116,68 @@
     }
     #blur-overlay.fade-out {
       opacity: 0;
-      pointer-events: none; /* Disable further clicks */
+      pointer-events: none;
     }
-
-    /* Emoji-Sized Image */
     .emoji-image {
-      width: 16px; /* Emoji size */
-      height: 16px; /* Emoji size */
-      vertical-align: middle; /* Aligns the image with the text */
-      margin-right: 4px; /* Small space between image and text */
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+    a {
+      color: #8aadf4; /* Set the link color here */
+      text-decoration: none; /* Remove underline if you want */
+    }
+    a:hover {
+      text-decoration: underline; /* Add underline on hover for better UX */
     }
   </style>
 </head>
 <body>
-  <!-- Blur Overlay -->
   <div id="blur-overlay">
-    <p id="click-text">Click to enter...</p>
+    <p id="click-text">welcome!</p>
   </div>
-
-  <!-- Audio for Sound (with loop attribute) -->
-  <audio id="enter-sound" src="https://github.com/satucat/satucat.github.io/raw/refs/heads/main/vtoa.mp3" loop></audio>
-
-  <!-- Your Existing Content -->
+  <audio id="enter-sound" src="https://github.com/fluxxzv/bio/raw/refs/heads/main/ona.mp3" loop></audio>
   <div class="diamond-pattern"></div>
   <div class="centre">
-    <div class="title-space"><br><br>Saturn</div>
+    <div class="title-space"><br><br>fluxx</div>
     <div class="content">
       <br>
-      <h>//&lt;website&gt;</h>
+      <h>/bio</h>
       <br>
-      <p>If your using rectify11, text may not render correctly</p>
-      <p>I am a person who likes to do random shit on the internet and mess with tech (idk why)</p>
+      <p>he/him</p>
+      <p>15 yo</p>
+      <p>i mess w phones</p>
+      <br>
+      <h>/socials</h>
       <p>
-        <img src="https://raw.githubusercontent.com/satucat/satucat.github.io/refs/heads/main/niko_pancakes.png" alt="emoji" class="emoji-image">
-        Meow. meow. meow. meow. meow. meow. meow. meow. meow. meow. meow. meow.
+        <img src="https://cdn3.emoji.gg/emojis/9255-discord.png" alt="discord" class="emoji-image">
+        Discord - <a href="https://www.discord.com/users/943384553165299733" target="_blank">@r</a>
+      </p>
+      <p>
+        <img src="https://cdn3.emoji.gg/emojis/41369-youtubeshort.png" alt="tiktok" class="emoji-image">
+        TikTok: - <a href="https://www.tiktok.com/@fluxxzv" target="_blank">@r</a>
+      </p>
+      <p>
+        <img  src="https://cdn3.emoji.gg/emojis/7866-blurple-telegram.png"  alt="telegram" class="emoji-image">
+        Telegram: - <a href="https://t.me/fluxxzv" target="_blank">@fluxxzv</a>
+      </p>
+      <p>
+        <img  src="https://cdn3.emoji.gg/emojis/38124-shield-crown.png"  alt="telegram" class="emoji-image">
+        carhub ex mod - <a href="https://discord.gg/DvTb9k7jZd" target="_blank">carhub</a>
       </p>
       <br>
-      <h>//&lt;socials&gt;</h>
-      <p>Discord - nik0fan1</p>
-      <p>TikTok: - <a href="https://www.youtube.com/@satucatwhy" target="_blank">@satucatwhy</a></p>
-      <p>YouTube, use link, not posting - <a href="https://www.youtube.com/@%E4%B8%80-%E4%BA%8C%E4%B8%80-%E4%BA%8C%E4%B8%80" target="_blank">@一-二一-二一</a></p>
-      <br>
-      <h>//&lt;projects&gt;</h>
-      <p>Recycle Bin Themes // Fork of Recycle Bin Themes, with more themes.</p>
-      <p>To run, paste this in Powershell: iwr satu.ftp.sh/recyclebinthemes/get.ps1 | iex</p>
-      <p>Linux Support? ⛔ | Windows Support? ✅</p>
     </div>
   </div>
-
-  <!-- JavaScript for Click to Fade -->
   <script>
     const blurOverlay = document.getElementById('blur-overlay');
     const clickText = document.getElementById('click-text');
     const enterSound = document.getElementById('enter-sound');
 
     blurOverlay.addEventListener('click', () => {
-      // Play the sound (it will loop because of the loop attribute)
       enterSound.play();
-
-      // Fade out the overlay
       blurOverlay.classList.add('fade-out');
+      document.body.style.overflow = 'auto';
     });
   </script>
 </body>
